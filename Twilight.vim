@@ -23,7 +23,7 @@ hi StatusLineNC ctermfg=231 ctermbg=240 cterm=NONE guifg=#f8f8f8 guibg=#565656 g
 hi Pmenu ctermfg=95 ctermbg=NONE cterm=NONE guifg=#9b703f guibg=NONE gui=NONE
 hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3c4043 gui=NONE
 hi IncSearch ctermfg=233 ctermbg=107 cterm=NONE guifg=#141414 guibg=#8f9d6a gui=NONE
-hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
+hi Search ctermfg=NONE ctermbg=248 cterm=underline guifg=NONE guibg=NONE gui=underline
 hi Directory ctermfg=167 ctermbg=NONE cterm=NONE guifg=#cf6a4c guibg=NONE gui=NONE
 hi Folded ctermfg=59 ctermbg=233 cterm=NONE guifg=#5f5a60 guibg=#141414 gui=NONE
 
@@ -93,15 +93,31 @@ hi htmlSpecialChar ctermfg=167 ctermbg=NONE cterm=NONE guifg=#cf6a4c guibg=NONE 
 hi javaScriptFunction ctermfg=228 ctermbg=NONE cterm=NONE guifg=#f9ee98 guibg=NONE gui=NONE
 hi javaScriptRailsFunction ctermfg=186 ctermbg=NONE cterm=NONE guifg=#dad085 guibg=NONE gui=NONE
 hi javaScriptBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi link javaScriptGlobal cssRenderProp
 hi yamlKey ctermfg=95 ctermbg=NONE cterm=NONE guifg=#9b703f guibg=NONE gui=NONE
 hi yamlAnchor ctermfg=103 ctermbg=NONE cterm=NONE guifg=#7587a6 guibg=NONE gui=NONE
 hi yamlAlias ctermfg=103 ctermbg=NONE cterm=NONE guifg=#7587a6 guibg=NONE gui=NONE
 hi yamlDocumentHeader ctermfg=107 ctermbg=NONE cterm=NONE guifg=#8f9d6a guibg=NONE gui=NONE
 hi cssURL ctermfg=103 ctermbg=NONE cterm=NONE guifg=#7587a6 guibg=NONE gui=NONE
 hi cssFunctionName ctermfg=186 ctermbg=NONE cterm=NONE guifg=#dad085 guibg=NONE gui=NONE
-hi cssColor ctermfg=167 ctermbg=NONE cterm=NONE guifg=#cf6a4c guibg=NONE gui=NONE
-hi cssPseudoClassId ctermfg=95 ctermbg=NONE cterm=NONE guifg=#9b703f guibg=NONE gui=NONE
+hi cssColor ctermfg=none ctermbg=NONE cterm=NONE guifg=#ffffff guibg=NONE gui=NONE
+hi link cssPseudoClassId sassId
 hi cssClassName ctermfg=95 ctermbg=NONE cterm=NONE guifg=#9b703f guibg=NONE gui=NONE
 hi cssValueLength ctermfg=167 ctermbg=NONE cterm=NONE guifg=#cf6a4c guibg=NONE gui=NONE
+hi link cssTableAttr cssValueLength
+hi link cssBoxAttr cssValueLength
+hi link cssFontAttr cssValueLength
+hi link cssValueTime sassId
+hi cssRenderAttr ctermfg=167 ctermbg=NONE cterm=NONE guifg=#cf6a4c guibg=NONE gui=NONE
 hi cssCommonAttr ctermfg=167 ctermbg=NONE cterm=NONE guifg=#cf6a4c guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi cssPropertyName ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#C5AF75 guibg=NONE gui=NONE
+hi cssRenderProp ctermfg=98 ctermbg=NONE cterm=NONE guifg=#B1B3BA guibg=NONE gui=NONE
+hi link cssColorProp cssRenderProp
+hi link cssBoxProp cssRenderProp
+hi link cssTextProp cssRenderProp
+hi link cssFontProp cssRenderProp
+hi sassVariable ctermfg=67 ctermbg=NONE cterm=NONE guifg=#B1B3BA guibg=NONE gui=NONE
+hi link sassCssAttribute cssValueNumber
+hi link sassClass sassId
+hi sassFunction ctermfg=NONE
